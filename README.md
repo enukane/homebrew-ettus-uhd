@@ -2,9 +2,9 @@
 published: false
 ---
 
-# HackRF OSX Install
+# Ettus UHD OSX Install
 
-This will walk you through getting HackRF to work on OSX. It is really just an adaptation of the awesome collection of [Homebrew](https://github.com/mxcl/homebrew) recipes from [Titanous](https://github.com/titanous/homebrew-gnuradio) for getting GNU Radio running on OSX.
+This will walk you through getting Ettus USRP to work on OSX. It is really just an adaptation of the awesome collection of [Homebrew](https://github.com/mxcl/homebrew) recipes from [Titanous](https://github.com/titanous/homebrew-gnuradio) for getting GNU Radio running on OSX.
 
 ## Installation
 
@@ -59,13 +59,13 @@ These steps have been tested on Mountain Lion 10.8.4 with Xcode 4.6.3. It is pro
 - Install gnuradio 
 
   ```sh
-  brew tap robotastic/homebrew-hackrf
+  brew tap stanback/homebrew-ettus-uhd
   brew install gnuradio --with-qt
   ```
-- Install HackRF Libraries
+- Install UHD Driver
 
   ```sh
-  brew install hackrf
+  brew install ettus-uhd 
   ```
 
 - Create the `~/.gnuradio/config.conf` config file for custom block support and add this into it
@@ -75,12 +75,12 @@ These steps have been tested on Mountain Lion 10.8.4 with Xcode 4.6.3. It is pro
   local_blocks_path=/usr/local/share/gnuradio/grc/blocks
   ```
 
-- Install HackRF & RTL-SDR related blocks
+- Install RTL-SDR related blocks
 
   ```sh
   brew install rtlsdr gr-osmosdr gr-baz --HEAD
   ```
-- If you want a graphic interface to play with your HackRF, GQRX is great
+- If you want a graphic interface to play with, GQRX is great
   To install it:
   
   ```sh
@@ -93,7 +93,7 @@ These steps have been tested on Mountain Lion 10.8.4 with Xcode 4.6.3. It is pro
   gqrx
   ```
   
-  And then configure it to use the HackRF. Probably best to start the sample rate at 1000000 until you know how much your system can handle.
+  And then configure it to use the UHD driver. Probably best to start the sample rate at 1000000 until you know how much your system can handle.
   
 **Congratulations!!**
 
@@ -101,7 +101,7 @@ Everything should now be working. It is time to give it a try! Below are some of
 
 ```sh
 gnuradio-companion
-osmocom_fft -a hackrf
+osmocom_fft -a uhd
 ```
 
 ##Troubleshooting
