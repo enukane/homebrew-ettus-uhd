@@ -8,7 +8,7 @@ This will walk you through getting Ettus USRP to work on OSX. It is really just 
 
 ## Installation
 
-These steps have been tested on Mountain Lion 10.8.4 with Xcode 4.6.3. It is probably a good idea to make sure all OSX updates have been applied and Xcode is up to date. Also, probably good to install the Xcode command line apps as explained over at[Stackoverflow](http://stackoverflow.com/a/932932).
+These steps have been tested on OSX 10.10 Yosemite with Xcode 6.1. It is probably a good idea to make sure all OSX updates have been applied and Xcode is up to date. Also, probably good to install the Xcode command line apps as explained over at [Stackoverflow](http://stackoverflow.com/a/932932).
 
 - Install [Homebrew](http://brew.sh/) if you haven't already
 
