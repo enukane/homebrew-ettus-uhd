@@ -2,9 +2,9 @@ require 'formula'
 
 class EttusUhd < Formula
   homepage 'http://www.ettus.com/'
-  url 'https://github.com/EttusResearch/uhd/archive/release_003_007_003.tar.gz'
-  sha1 'bd9ae0dfb2777bca2a22f9e918b707213b35276a'
-  version '3.7.3'
+  url 'https://github.com/EttusResearch/uhd/archive/release_003_008_004.tar.gz'
+  sha1 'ae540374944141c0f9c459fcf3cc7ee028083602'
+  version '3.8.4'
   head 'git@github.com:EttusResearch/uhd.git'
 
   depends_on 'cmake' => :build
